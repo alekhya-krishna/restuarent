@@ -11,13 +11,13 @@
     display: none;
 }
 .searchicon{
-    display: block;
+  display: block;
 }
 .logo img{
     width: 150px;
 }
 .bar{
-    display: none;
+     display: none; /* hide bars and cross */
 }
 .header{
     display: flex;
@@ -49,8 +49,9 @@ font-weight:bold ;
     display: flex;
     justify-content:end;
 }
-.account ul li{
-    padding: 0 15px;
+
+.account ul li {
+    padding: 0px 15px;
     font-size: 18px;
 }
 .bar i:hover{
@@ -70,15 +71,77 @@ font-weight:bold ;
 .srchicon{
     background-color: rgb(255, 210, 210);
     display: block;
-    padding:4px 5px ;
+    padding: 4px 5px ;
     cursor: pointer;
 }
-@media only screen and (max-width:768px){
+.home{
+    background-color: rgb(248, 232, 217);
+    padding: 0 7vw;
+}
+.main_slide{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+.main_slide div:nth-child(2){
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+.main_slide div:nth-child(1){
+    padding-top:20px ;
+    flex: 1;
+    font-size: 30px;
+}
+.main_slide div:nth-child(1)p{
+    font-size: 13px;
+    padding: 20px 0;
+
+}
+.main_slide div:nth-child(1) span{
+    color: rgb(253,57,8);
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-color:rgb(253, 176,34) ;
+}
+.red_btn{
+    cursor: pointer;
+    margin-top: 20px;
+    width: 160px;
+    font-weight: bold;
+    color: aliceblue;
+    line-height: 50px;
+    background-color: rgb(253, 77, 8);
+    border-radius: 5px;
+    border: 1px solid rgb(253, 77, 8);
+    box-shadow: 0 10px 15px rgb(250, 120,69);
+    transition: all 0.2s;
+}
+.red_btn i{
+    color: white;
+    transition: all 0.2s;
+}
+.red_btn:hover{
+    background-color: white;
+    box-shadow: 0 2px 15px rgb(250, 120,69);
+    border: 1px solid rgb(253,77,8);
+    color:rgb(253,77,8);
+}
+.red_btn:hover i{
+    color: rgb(253, 77, 8);
+}
+.main_slide p{
+    font-size: 13px;
+    padding: 20px 0;
+
+}
+@media only screen and (max-width:768px) {
     .header .nav,.header .account{
         display: none;
     }
     .search{
-        width:60vw ;
+        width: 60vw;
     }
     .bar{
         display: block;
@@ -90,19 +153,19 @@ font-weight:bold ;
         flex-direction: column;
         position: fixed;
         top: 0;
-        width: 100%;
-        bottom: 0;
         right: -100%;
-        background-color: rgb(252, 233, 216);
+        bottom: 0;
+        width: 100%;
+        transition: all 0.5s;
+        background-color: rgb(252, 231, 216);
     }
-    .headerbar .account, .headerbar .nav{
+    .headerbar .account,.headerbar .nav{
         display: block;
         font-size: 18px;
     }
-    
     .bar .fa-xmark{
         display: none;
-        top:20px;
+        top: 20px;
         right: 5w;
         position: absolute;
         font-size: 25px;
@@ -111,27 +174,48 @@ font-weight:bold ;
         flex-direction: column;
         margin-top: 10px;
         text-align: center;
-
     }
-    .headerbar .nav li{
+    .header .nav li{
         width: 96vw;
         margin: 10px 0;
         padding: 15px 30px;
-        box-shadow:0 2px 15px rgb(252, 193, 169);
-        font-size: 15px;
+        box-shadow: 0 2px 15px rgb(252, 193,169);
         margin-top: 5px;
     }
     .headerbar .account{
         line-height: 40px;
         margin-top: 60px;
-        background-color: rgb(252, 210,182);
+        background-color: rgb(255, 210, 182);
         padding: 15px;
-
     }
     .headerbar .account ul{
         justify-content: space-between;
     }
 
-   
 }
+@media only screen and(max-width:550px){
+   .main_slide div:nth-child(1){
+    font-size: 18px;
+}
+ .main_slide div:nth-child(1) p{
+    padding-top: 5px;
+    margin: 10px 0;
+    font-size: 11px;
+ }
+ .red_btn{
+    margin-top: 10px;
+    width: 120px;
+    line-height: 30px;
+    font-size: 12px;
+    padding: 0 10px;
+
+ }
+ .main_slide div:nth-child(1) span{
+    text-underline-offset: 5px;
+ }
+ .main_slide div:nth-child(2) img{
+    width: 70vw;
+ }
  
+    
+}

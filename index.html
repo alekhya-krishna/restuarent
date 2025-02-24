@@ -1,96 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" href="badge-2.png" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="badge-2.png">
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Website </title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <div class="header">
+            <!-- this is for making header responsive -->
             <div class="headerbar">
-                <div class="accout">
+                <div class="account">
                     <ul>
                         <a href="">
-                            <li>
-                                <i class="fa-solid fa-house-chimney"></i>
-                            </li>
+                            <li class="fa-solid fa-house-chimney"></li>
                         </a>
-                        <a href="">
+                        <a href="#">
                             <li>
-                                <i class="fa-solid fa-magnifying-glass searchicon " id="searchicon1"></i>
+                                <i class="fa-solid fa-magnifying-glass searchicon" id="searchicon1"></i>
                             </li>
                         </a>
                         <div class="search" id="searchinput1">
                             <input type="search">
                             <i class="fa-solid fa-magnifying-glass srchicon"></i>
-
                         </div>
                         <a href="">
                             <li>
                                 <i class="fa-solid fa-user" id="user-mb"></i>
                             </li>
-                               
-
-    
-                            
                         </a>
                     </ul>
                 </div>
                 <div class="nav">
                     <ul>
-                       <a href="">
-                        <li>HOME</li>
-                       </a>
-                       <a href="">
-                        <li>ABOUT</li>
-                       </a>
-                       <a href="">
-                        <li>FOOD MENU</li>
-                       </a>
-                       <a href="">
-                        <li>BOOK TABLE</li>
-                       </a>
+                        <a href="">
+                            <li>HOME</li>
+                        </a>
+                        <a href="">
+                            <li>ABOUT</li>
+                        </a>
+                        <a href="">
+                            <li>FOOD MENU</li>
+                        </a>
+                        <a href="">
+                            <li>BOOK TABLE</li>
+                        </a>
                     </ul>
                 </div>
             </div>
+            <!-- img -->
             <div class="logo">
                 <img src="official logo wide.png" alt="">
-               
+
             </div>
+            <!--  end image -->
+            <!-- div for bars and cross -->
             <div class="bar">
                 <i class="fa-solid fa-bars"></i>
                 <i class="fa-solid fa-xmark" id="hdcross"></i>
             </div>
+            <!-- end dic -->
+            <!-- div for nav bar -->
             <div class="nav">
                 <ul>
-                    <a href="">
+                    <a href="#">
                         <li>HOME</li>
                     </a>
-                    <a href="">
+                    <a href="#">
                         <li>ABOUT</li>
                     </a>
-                    <a href="">
+                    <a href="#">
                         <li>FOOD MENU</li>
                     </a>
-                    <a href="">
+                    <a href="#">
                         <li>BOOK TABLE</li>
                     </a>
                 </ul>
             </div>
+            <!-- end of nav bar -->
+            <!-- account division -->
             <div class="account">
                 <ul>
-                    <a href="">
-                        <i class="fa-solid fa-house-chimney"></i>
-
+                    <a href="#">
+                        <li>
+                            <i class="fa-solid fa-house-chimney"></i>
+                        </li>
                     </a>
                     <a href="#">
-                        <i class="fa-solid fa-magnifying-glass searchicon" id="searchicon2"></i>
-
-                        
+                        <Li>
+                            <i class="fa-solid fa-magnifying-glass searchicon" id="searchicon2"></i>
+                        </Li>
                     </a>
                     <div class="search" id="searchinput2">
                         <input type="search">
@@ -103,7 +110,22 @@
                     </a>
                 </ul>
             </div>
-
+            <!-- clossing account div -->
         </div>
     </header>
+    <div class="home">
+       <div class="main_slide">
+        <div>
+            <h1>Enjoy<span>Delicious Food</span> in Your Healthy life</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur pariatur voluptate libero et aspernatur suscipit 
+                deleniti repudiandae? Dolor et obcaecati tempora maiores. Earum soluta odio dicta ab! Soluta, omnis architecto.</p>
+                <button class="red_btn">Visit Now <i class="fa-solid fa-arrow-right-long"></i></button>
+        </div>
+        <div>
+            <img src="https://www.pngmart.com/files/15/Food-Plate-Top-View-Snack-PNG.png" alt=" ">
+
+        </div>
+       </div>
+    </div>
+    <script src="app.js"></script>
 </body>
